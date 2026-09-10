@@ -43,7 +43,7 @@ are implemented using PyTorch tensor operations and `torch.autograd`.
 
 In particular, the Hessian callback constructs the Hessian of the Lagrangian required by Ipopt,
 
-$$ \nabla^2_{xx} L(x,\lambd ) = \sigma \nabla^2 f(x) + \sum_i \lambda_i \nabla^2 g_i(x),$$
+$$ \nabla^2_{xx} L(x,\lambda ) = \sigma \nabla^2 f(x) + \sum_i \lambda_i \nabla^2 g_i(x),$$
 
 using second-order derivatives obtained from PyTorch.
 
